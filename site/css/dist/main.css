@@ -1215,6 +1215,7 @@ th {
   font-family: 'Montserrat', sans-serif; }
 
 a {
+  display: inline-block;
   color: #333;
   text-decoration: none;
   transition: color .4s ease; }
@@ -1230,6 +1231,13 @@ h3 {
 h4 {
   margin: 0px;
   font-weight: 400; }
+
+.flex-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center; }
+  .flex-container--right {
+    justify-content: flex-end; }
 
 .down-arrow-container {
   width: 30px;
@@ -1249,10 +1257,17 @@ h4 {
   border-width: 4px 4px 0 0;
   transform: rotate(135deg); }
 
-.logo-name-container {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center; }
+.icon {
+  display: inline-block;
+  width: 18px;
+  height: 100%;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  transition: color .4s ease; }
+  .icon:hover {
+    stroke: #ff7d7d;
+    fill: #ff7d7d; }
 
 .logo {
   height: 50px;
@@ -1269,12 +1284,11 @@ h4 {
 .nav__list {
   padding: 0;
   margin: 0;
-  text-align: right; }
+  text-align: right;
+  list-style: none; }
 
-.nav__item {
-  display: inline-block; }
-  .nav__item a {
-    padding: 5px 10px; }
+.nav__item a {
+  padding: 5px 10px; }
 
 .banner {
   background: #fff;

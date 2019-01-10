@@ -3,6 +3,7 @@
 }
 
 a {
+    display: inline-block;
     color: #333;
     text-decoration: none;
     transition: color .4s ease;
@@ -25,6 +26,16 @@ h4 {
     font-weight: 400;
 }
 
+.flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    &--right {
+        justify-content: flex-end;
+    }
+}
+
 .down-arrow-container {
     width: 30px;
     height: 30px;
@@ -44,3 +55,18 @@ h4 {
     border-width: 4px 4px 0 0;
     transform: rotate(135deg);
 }
+
+.icon {
+    display: inline-block;
+    width: 18px;
+    height: 100%;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    transition: color .4s ease;
+
+    &:hover {
+        stroke: #ff7d7d;
+        fill: #ff7d7d;
+    }
+  }
