@@ -1,6 +1,9 @@
-.logo {
-    height: 50px;
-    width: 50px;
-    padding: 10px;
-    background-color: aquamarine;
-}
+@import "libs/normalize.scss",
+        "libs/flexboxgrid.scss";
+
+@import "components/layout.scss",
+        "components/base.scss",
+        "components/header.scss",
+        "components/banner.scss",
+        "components/about.scss",
+        "components/card.scss";

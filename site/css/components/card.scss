@@ -1,0 +1,17 @@
+.card {
+    margin-bottom: 35px;
+
+    &__img {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        &--lg {
+            height: 300px;
+        }
+    }
+}

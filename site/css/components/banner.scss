@@ -1,0 +1,15 @@
+.banner {
+    background: #fff; //fallback
+    background: url('../../images/banner.jpg') center fixed no-repeat #fff; //fallback
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../images/banner.jpg') center fixed no-repeat #fff;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+
+    &__title {
+        text-align: center;
+        margin-top: 210px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}

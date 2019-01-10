@@ -1,0 +1,16 @@
+.section {
+    padding: 40px 15px 50px;
+
+    &__header {
+        text-align: center;
+    }
+
+    &--teal {
+        background-color: #d1e5e4;
+    }
+}
+
+.projects {
+    width: 75%;
+    margin: 0 auto;
+}
