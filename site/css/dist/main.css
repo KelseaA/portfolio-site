@@ -376,6 +376,9 @@ th {
 .grid--no-gutters {
   padding: 0; }
 
+.grid--1020 {
+  max-width: 1020px; }
+
 .row {
   box-sizing: border-box;
   display: -webkit-box;
@@ -1201,14 +1204,13 @@ th {
     display: none !important; } }
 
 .section {
-  padding: 40px 15px 50px; }
+  padding: 50px 15px 70px; }
   .section__header {
     text-align: center; }
   .section--teal {
     background-color: #d1e5e4; }
 
 .projects {
-  width: 75%;
   margin: 0 auto; }
 
 * {
@@ -1269,6 +1271,9 @@ h4 {
     stroke: #ff7d7d;
     fill: #ff7d7d; }
 
+.image {
+  width: 100%; }
+
 .logo {
   height: 50px;
   width: 50px;
@@ -1297,11 +1302,33 @@ h4 {
   background-size: cover;
   height: 500px;
   position: relative; }
-  .banner__title {
+  .banner__title, .banner__subtitle {
     text-align: center;
-    margin-top: 210px;
     text-transform: uppercase;
     font-weight: 400; }
+  .banner__title {
+    margin-top: 200px;
+    margin-bottom: 12px; }
+  .banner__subtitle {
+    color: white;
+    font-size: 20px;
+    margin-top: 12px; }
+
+.tools {
+  background: #333;
+  background: url("../../images/computer-back.jpeg") center fixed no-repeat #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/computer-back.jpeg") center fixed no-repeat #fff;
+  background-size: cover;
+  color: #fff; }
+  .tools__list {
+    padding: 0;
+    text-align: center; }
+  .tools__list-item {
+    display: inline-block;
+    margin: 15px 25px; }
+    .tools__list-item img {
+      max-width: 80px;
+      max-height: 80px; }
 
 .card {
   margin-bottom: 35px; }

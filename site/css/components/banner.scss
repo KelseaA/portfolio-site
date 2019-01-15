@@ -6,10 +6,21 @@
     height: 500px;
     position: relative;
 
-    &__title {
+    &__title,
+    &__subtitle {
         text-align: center;
-        margin-top: 210px;
         text-transform: uppercase;
         font-weight: 400;
+    }
+
+    &__title {
+        margin-top: 200px;
+        margin-bottom: 12px;
+    }
+
+    &__subtitle {
+        color: white;
+        font-size: 20px;
+        margin-top: 12px;
     }
 }

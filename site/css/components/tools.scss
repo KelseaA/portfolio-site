@@ -1,0 +1,23 @@
+.tools {
+    background: #333; //fallback
+    background: url('../../images/computer-back.jpeg') center fixed no-repeat #fff; //fallback
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../images/computer-back.jpeg') center fixed no-repeat #fff;
+    background-size: cover;
+
+    color: #fff;
+
+    &__list {
+        padding: 0;
+        text-align: center;
+    }
+
+    &__list-item {
+        display: inline-block;
+        margin: 15px 25px;
+
+        img {
+            max-width: 80px;
+            max-height: 80px;
+        }
+    }
+}
