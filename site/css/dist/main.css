@@ -1224,6 +1224,9 @@ a {
   a:hover {
     color: #ff7d7d; }
 
+p {
+  line-height: 1.5; }
+
 h1 {
   color: #fff; }
 
@@ -1274,6 +1277,9 @@ h4 {
 .image {
   width: 100%; }
 
+.text-center {
+  text-align: center; }
+
 .logo {
   height: 50px;
   width: 50px;
@@ -1317,8 +1323,15 @@ h4 {
 .contact__title {
   margin-top: 0; }
 
-.contact__text {
-  line-height: 1.75; }
+.contact__email:hover .contact__mail-icon {
+  fill: #ff7d7d; }
+
+.contact__mail-icon {
+  transition: fill .4s ease;
+  vertical-align: sub;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px; }
 
 footer {
   text-align: center;

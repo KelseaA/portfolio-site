@@ -1,9 +1,23 @@
 .contact {
+    
     &__title {
         margin-top: 0;
     }
 
-    &__text {
-        line-height: 1.75;
+    &__email {        
+
+        &:hover {
+            .contact__mail-icon {
+                fill: #ff7d7d;
+            }
+        }
+    }
+
+    &__mail-icon {
+        transition: fill .4s ease;
+        vertical-align: sub;
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
     }
 }
