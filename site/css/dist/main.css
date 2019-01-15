@@ -1314,6 +1314,18 @@ h4 {
     font-size: 20px;
     margin-top: 12px; }
 
+.contact__title {
+  margin-top: 0; }
+
+.contact__text {
+  line-height: 1.75; }
+
+footer {
+  text-align: center;
+  border-top: 1px solid #eee; }
+  footer p {
+    font-size: 14px; }
+
 .tools {
   background: #333;
   background: url("../../images/computer-back.jpeg") center fixed no-repeat #fff;
