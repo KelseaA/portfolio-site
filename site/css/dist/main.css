@@ -1203,6 +1203,9 @@ th {
   .hidden-xl {
     display: none !important; } }
 
+.main {
+  margin-top: 74px; }
+
 .section {
   padding: 50px 15px 70px; }
   .section__header {
@@ -1215,6 +1218,11 @@ th {
 
 * {
   font-family: 'Montserrat', sans-serif; }
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%; }
 
 a {
   display: inline-block;
@@ -1280,6 +1288,14 @@ h4 {
 .text-center {
   text-align: center; }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: white; }
+
 .logo {
   height: 50px;
   width: 50px;
@@ -1306,14 +1322,14 @@ h4 {
   background: url("../../images/banner.jpg") center fixed no-repeat #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg") center fixed no-repeat #fff;
   background-size: cover;
-  height: 500px;
+  height: 550px;
   position: relative; }
   .banner__title, .banner__subtitle {
     text-align: center;
     text-transform: uppercase;
     font-weight: 400; }
   .banner__title {
-    margin-top: 200px;
+    margin-top: 215px;
     margin-bottom: 12px; }
   .banner__subtitle {
     color: white;
@@ -1352,8 +1368,8 @@ footer {
     display: inline-block;
     margin: 15px 25px; }
     .tools__list-item img {
-      max-width: 80px;
-      max-height: 80px; }
+      max-width: 85px;
+      max-height: 70px; }
 
 .card {
   margin-bottom: 35px; }
