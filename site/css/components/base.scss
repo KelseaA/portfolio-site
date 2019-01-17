@@ -10,7 +10,7 @@ body {
 
 a {
     display: inline-block;
-    color: #333;
+    color: currentColor;
     text-decoration: none;
     transition: color .4s ease;
 
@@ -29,6 +29,7 @@ h1 {
 
 h3 {
     margin: 18px 0 10px;
+    font-size: 20px;
 }
 
 h4 {
