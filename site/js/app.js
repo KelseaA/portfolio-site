@@ -44,7 +44,7 @@ function changeMainImage(n) {
 }
 
 (function() {
-    if (thumbnail.length) {
+    if (thumbnail.length || arrow.length) {
         addEventListeners();
     }          
 })();

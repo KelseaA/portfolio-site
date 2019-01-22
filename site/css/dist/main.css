@@ -1407,6 +1407,11 @@ footer {
     height: 100%; }
     .slider__slide + .slider__slide {
       display: none; }
+  .slider__thumbnail {
+    cursor: pointer;
+    transition: all .25s ease; }
+    .slider__thumbnail:hover {
+      opacity: 1; }
   .slider__background {
     position: absolute;
     height: 100%;

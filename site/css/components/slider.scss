@@ -37,6 +37,15 @@
         }        
     }    
 
+    &__thumbnail {
+        cursor: pointer;
+        transition: all .25s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
     &__background {
         position: absolute;
         height: 100%;
