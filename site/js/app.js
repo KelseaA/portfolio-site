@@ -5,7 +5,7 @@ var slideIndex = 1;
 function addEventListeners() {    
     for (var i = 0; i < thumbnail.length; i++) {
         thumbnail[i].addEventListener("click", function() {
-            var thumbnailIndex = this.getAttribute("data-index");
+            var thumbnailIndex = parseInt(this.getAttribute("data-index"));
             changeMainImage(slideIndex = thumbnailIndex);
         });
     }
