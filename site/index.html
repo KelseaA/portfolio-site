@@ -61,8 +61,8 @@
                     </div>
                 </div>
             </div>
-            <div class="down-arrow-container">
-                <a href="#" class="down-arrow"></a>
+            <div class="arrow-container arrow-container--down">
+                <a href="#" class="arrow arrow--down"></a>
             </div>
         </section>
 
@@ -110,9 +110,11 @@
                     </div> -->
                 </div>
                 <div class="slider">
+                    <div class="slider__btn slider__btn--left">
+                        <a href="#" class="arrow arrow--left js-arrow" data-increment="-1"></a>
+                    </div>
                     <div class="row">
                         <div class="col col--md-10 slider__main">
-                            <button>Left</button>
                             <div class="slider__slide js-slide">
                                 <div class="slider__background" style="background-image: url('./images/pictionary-thumbnail_cropped.jpg')"></div>
                                 <div class="slider__text">
@@ -134,9 +136,12 @@
                                     <a href="#">View Details</a>
                                 </div>
                             </div>    
-                            <button>right</button>                                       
                         </div>
                     </div>
+                    <div class="slider__btn slider__btn--right">
+                        <a href="#" class="arrow arrow--right js-arrow" data-increment="+1"></a>
+                    </div>                                      
+
                     <div class="row">                        
                         <div class="col col--md-2">
                             <img class="slider__thumbnail js-thumbnail opacity opacity-off" data-index="1" src="./images/pictionary-thumbnail_cropped.jpg">

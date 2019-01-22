@@ -1,4 +1,5 @@
 .slider {    
+    position: relative;
 
     &__main {
         height: 400px;
@@ -29,7 +30,7 @@
 
     &__slide {
         display: block;
-        height: 100%;        
+        height: 100%;  
 
         & + .slider__slide {
             display: none;
@@ -54,6 +55,20 @@
         left: 50px;
         color: #fff;
         z-index: 1;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 212px;
+        z-index: 1;
+
+        &--left {
+            left: 24px;
+        }
+
+        &--right {
+            right: 24px;
+        }
     }
 }
 
