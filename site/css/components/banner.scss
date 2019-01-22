@@ -9,13 +9,13 @@
     &__title,
     &__subtitle {
         text-align: center;
-        text-transform: uppercase;
         font-weight: 400;
     }
 
     &__title {
         margin-top: 255px;
         margin-bottom: 12px;
+        text-transform: uppercase;
     }
 
     &__subtitle {
