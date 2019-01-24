@@ -8,6 +8,10 @@ body {
     width: 100%;
 }
 
+main {
+    margin-top: 74px;
+}
+
 a {
     display: inline-block;
     color: currentColor;
@@ -25,6 +29,11 @@ p {
 
 h1 {
     color: #fff;
+    font-size: 26px;
+}
+
+h2 {
+    margin-top: 6px;
 }
 
 h3 {
@@ -47,9 +56,13 @@ h4 {
     }
 }
 
+.text-center {
+    text-align: center;
+}
+
 .arrow-container--down {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -59,8 +72,8 @@ h4 {
 .arrow {
     content: '';
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     border-style: solid;
     border-width: 4px 4px 0 0;
     color: currentColor;
@@ -77,6 +90,12 @@ h4 {
 
 .arrow--right {
     transform: rotate(45deg);
+}
+
+.arrow--inline {
+    width: 7px;
+    height: 7px;
+    border-width: 3px 3px 0 0;
 }
 
 .icon {
@@ -101,3 +120,35 @@ h4 {
   .text-center {
       text-align: center;
   }
+
+  @media only screen and (min-width: 540px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .arrow-container--down {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .arrow--down {
+        width: 22px;
+        height: 22px;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        margin-top: initial;
+    }
+
+    .arrow-container--down {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .arrow--down {
+        width: 30px;
+        height: 30px;
+    }
+}

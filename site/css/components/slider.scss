@@ -2,9 +2,10 @@
     position: relative;
 
     &__main {
-        height: 400px;
+        height: 500px;
         overflow: hidden;
-        margin: 25px auto;           
+        margin: 25px auto;    
+        border: 1px solid #eee;
         position: relative;
 
         &:after {
@@ -29,21 +30,15 @@
     }
 
     &__slide {
-        display: block;
         height: 100%;  
 
         & + .slider__slide {
-            display: none;
+            display: block;
         }        
     }    
 
     &__thumbnail {
-        cursor: pointer;
-        transition: all .25s ease;
-
-        &:hover {
-            opacity: 1;
-        }
+        display: none;
     }
 
     &__background {
@@ -68,15 +63,15 @@
 
     &__btn {
         position: absolute;
-        top: 212px;
+        top: 260px;
         z-index: 1;
 
         &--left {
-            left: 24px;
+            left: 0;
         }
 
         &--right {
-            right: 24px;
+            right: 0;
         }
     }
 }
@@ -87,4 +82,43 @@
 
 .opacity-off {
     opacity: 1;
+}
+
+@media only screen and (min-width: 540px) {
+    .slider {    
+    
+        &__slide {
+    
+            & + .slider__slide {
+                display: none;
+            }        
+        }    
+    
+        &__thumbnail {
+            display: block;
+            cursor: pointer;
+            transition: all .25s ease;
+            border: 1px solid #eee;
+    
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .slider {    
+    
+        &__btn {
+    
+            &--left {
+                left: 24px;
+            }
+    
+            &--right {
+                right: 24px;
+            }
+        }
+    }
 }

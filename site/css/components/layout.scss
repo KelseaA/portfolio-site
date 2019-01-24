@@ -3,7 +3,8 @@
 }
 
 .section {
-    padding: 50px 15px 70px;
+    padding: 35px 6px 50px;
+
 
     &__header {
         text-align: center;
@@ -16,4 +17,10 @@
 
 .projects {
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .section {
+        padding: 50px 15px 70px;    
+    }
 }

@@ -3,7 +3,7 @@
     background: url('../../images/banner.jpg') center fixed no-repeat #fff; //fallback
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../../images/banner.jpg') center fixed no-repeat #fff;
     background-size: cover;
-    height: 550px;
+    height: 400px;
     position: relative;
 
     &__title,
@@ -13,7 +13,7 @@
     }
 
     &__title {
-        margin-top: 255px;
+        margin-top: 175px;
         margin-bottom: 12px;
         text-transform: uppercase;
     }
@@ -22,5 +22,27 @@
         color: white;
         font-size: 20px;
         margin-top: 12px;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    .banner {
+        height: 475px;
+
+    
+        &__title {
+            margin-top: 200px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .banner {
+        height: 550px;
+
+    
+        &__title {
+            margin-top: 235px;
+        }
     }
 }

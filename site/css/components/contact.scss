@@ -1,7 +1,7 @@
 .contact {
     
-    &__title {
-        margin-top: 0;
+    &__title--desktop {
+        display: none;
     }
 
     &__email {        
@@ -19,5 +19,22 @@
         width: 18px;
         height: 18px;
         margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contact {
+    
+        &__title {
+
+            &--desktop {
+                display: block;
+                margin-top: 0;
+            }
+
+            &--mobile {
+                display: none;
+            }
+        }
     }
 }
