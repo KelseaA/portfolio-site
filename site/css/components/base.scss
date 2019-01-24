@@ -93,8 +93,8 @@ h4 {
 }
 
 .arrow--inline {
-    width: 7px;
-    height: 7px;
+    width: 7px !important;
+    height: 7px !important;
     border-width: 3px 3px 0 0;
 }
 
@@ -131,7 +131,7 @@ h4 {
         height: 22px;
     }
     
-    .arrow--down {
+    .arrow {
         width: 22px;
         height: 22px;
     }
@@ -147,7 +147,7 @@ h4 {
         height: 30px;
     }
     
-    .arrow--down {
+    .arrow {
         width: 30px;
         height: 30px;
     }
