@@ -55,10 +55,19 @@
 
     &__text {
         position: absolute;
-        bottom: 50px;
-        left: 50px;
+        bottom: 30px;
+        left: 40px;
         color: #fff;
         z-index: 1;
+
+        p {
+            margin: 5px 0;
+        }
+    }
+
+    &__link {
+        margin: 5px 0;
+        display: block;
     }
 
     &__btn {

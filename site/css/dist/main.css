@@ -1486,10 +1486,15 @@ footer {
     transform: translateX(-50%); }
   .slider__text {
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    bottom: 30px;
+    left: 40px;
     color: #fff;
     z-index: 1; }
+    .slider__text p {
+      margin: 5px 0; }
+  .slider__link {
+    margin: 5px 0;
+    display: block; }
   .slider__btn {
     position: absolute;
     top: 260px;
