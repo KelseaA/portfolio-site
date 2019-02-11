@@ -22,10 +22,10 @@
                         <div class="col col--sm-9">
                             <nav class="nav">                            
                                 <ul class="nav__list flex-container flex-container--right">
-                                    <li class="nav__item"><a href="#projects">Projects</a></li>
-                                    <li class="nav__item"><a href="#tools">Tools</a></li>
-                                    <li class="nav__item"><a href="#about">About</a></li>
-                                    <li class="nav__item js-scroll"><a href="#contact">Contact</a></li>
+                                    <li class="nav__item"><a class="js-smooth-scroll" href="#projects" data-scroll>Projects</a></li>
+                                    <li class="nav__item"><a class="js-smooth-scroll" href="#tools" data-scroll>Tools</a></li>
+                                    <li class="nav__item"><a class="js-smooth-scroll" href="#about" data-scroll>About</a></li>
+                                    <li class="nav__item"><a class="js-smooth-scroll" href="#contact" data-scroll>Contact</a></li>
                                     <li class="nav__item">
                                         <a href="https://www.linkedin.com/in/kelseaanderson/" target="_blank">
                                             <svg class="icon icon-linkedin" version="1.1" xmlns="http://www.w3.org/2000/svg" width="0" height="0" viewBox="0 0 24 28">
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="arrow-container arrow-container--down">
-                <a href="#" class="arrow arrow--down"></a>
+                <a href="#projects" data-scroll class="arrow arrow--down js-smooth-scroll"></a>
             </div>
         </section>
 
@@ -230,6 +230,7 @@
     </main>
     
 
+    <script src="js/smooth-scroll.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

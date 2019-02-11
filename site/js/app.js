@@ -46,5 +46,10 @@ function changeMainImage(n) {
 (function() {
     if (thumbnail.length || arrow.length) {
         addEventListeners();
-    }          
+    }     
+
+    var scroll = new SmoothScroll('.js-smooth-scroll', {
+        speed: 500,
+        speedAsDuration: true
+    });
 })();
