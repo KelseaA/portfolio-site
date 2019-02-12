@@ -2,6 +2,9 @@ var thumbnail = document.getElementsByClassName("js-thumbnail");
 var arrow = document.getElementsByClassName("js-arrow");
 var slideIndex = 1;
 
+var hamburgerIcon = document.getElementsByClassName("js-mobile-menu");
+var close = document.getElementsByClassName("js-close");
+
 function addEventListeners() {    
     for (var i = 0; i < thumbnail.length; i++) {
         thumbnail[i].addEventListener("click", function() {
@@ -43,10 +46,30 @@ function changeMainImage(n) {
     thumbnail[slideIndex-1].className += " opacity-off";
 }
 
+function mobileMenu () {
+    var nav = document.getElementsByClassName("nav")[0];
+
+    hamburgerIcon[0].addEventListener("click", function() {
+        nav.classList.toggle("active");
+    });
+
+    for (var i = 0; i < close.length; i++) {
+        close[i].addEventListener("click", function(){
+            if (nav.classList.contains("active")) {
+                nav.classList.remove("active");
+            }
+        });
+    }
+}
+
 (function() {
     if (thumbnail.length || arrow.length) {
         addEventListeners();
     }     
+
+    if (hamburgerIcon.offsetParent !== null) {
+        mobileMenu();
+    }
 
     var scroll = new SmoothScroll('.js-smooth-scroll', {
         speed: 500,

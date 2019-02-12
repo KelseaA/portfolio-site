@@ -14,3 +14,41 @@
         }
     }
 }
+
+@media only screen and (max-width: 540px) {
+    .nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #d1e5e4;
+        width: 100%;
+        height: 100vh;
+        visibility: hidden;
+        transition: all 500ms ease;
+
+        &__list {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__item a {
+            padding: 15px 0px;
+            width: 100%;
+        }
+    }
+
+    .nav.active {
+        visibility: visible;
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 541px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
