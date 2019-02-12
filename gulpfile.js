@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var runSequence = require('run-sequence');
+var del = require('del');
 var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {
@@ -11,6 +12,10 @@ gulp.task('sass', function() {
             stream: true
         }))
 });
+
+gulp.task('clean:dist', function() {
+    return del.sync('dist');
+})
 
 gulp.task('browserSync', function() {
     browserSync.init({
@@ -30,4 +35,11 @@ gulp.task('default', function (callback) {
     runSequence(['sass','browserSync', 'watch'],
       callback
     )
+})
+
+gulp.task('build', function (callback) {
+  runSequence('clean:dist', 
+    ['sass', 'useref', 'images', 'fonts'],
+    callback
+  )
 })
